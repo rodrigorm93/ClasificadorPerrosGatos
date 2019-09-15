@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+{% if current_user.is_authenticated %}
+	<!DOCTYPE html>
+<html>
+<body>
+
+
+<center>
+<form action="/uploaded" method="post" enctype="multipart/form-data">
+    Seleccionar imagen:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Subir Imagen" name="submit">
+</form>
+</center>
+</body>
+
+
+</html>
+
+	  	{% endif %}
+
+
+{% endblock %}

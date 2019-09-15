@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<center>
+<img src="{{url_for('static', filename=user_image) }}" WIDTH=520 HEIGHT=400></img>
+  </center>
+
+					<!-- {{ predictions }}
+ -->
+					<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+  
+<h2>Resultado</h2>
+
+<table>
+  <tr>
+    <th>Gato o Perro</th>
+    <th>Porcentaje de probabilidad</th>
+  </tr>
+  <tr>
+    <td>Perro</td>
+    <td>{{ pred_dog }}%</td>
+  </tr>
+  <tr>
+    <td>Gato</td>
+    <td>{{ pred_cat }}%</td>
+  </tr>
+</table>
+
+
+    <title>Index</title>
+
+
+</body>
+</html>
+
+
+{% endblock %}
