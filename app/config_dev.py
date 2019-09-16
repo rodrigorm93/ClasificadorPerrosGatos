@@ -32,4 +32,4 @@ LOG_FILENAME = 'activity.log'
 LOG_MAXBYTES = 1024
 LOG_BACKUPS = 2
 
-UPLOAD_FOLDER = '/Users/Rodrigo/Documents/Proyectos/ClasificadorDogCat/app/static/img'
+UPLOAD_FOLDER = '../ClasificadorDogCat/app/static/img'

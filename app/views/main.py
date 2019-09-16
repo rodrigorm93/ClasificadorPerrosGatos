@@ -30,9 +30,10 @@ def upload_file():
       path2 = os.path.join(app.config['UPLOAD_FOLDER'], f.filename)
       f.save(path)
 
-      UPLOAD_FOLDER2 = '/Users/Rodrigo/Documents/Proyectos/ClasificadorDogCat/app/static/img'
+      UPLOAD_FOLDER2 = '../ClasificadorDogCat/app/static/img'
 
-      model= load_model("/Users/Rodrigo/Documents/modelo/model.h5")
+     # model= load_model("C:/Users/Rodrigo/Documents/Proyectos/ClasificadorDogCat/app/modelo/model.h5")
+      model= load_model("../ClasificadorDogCat/app/modelo/model.h5")
      
       #model.load_weights ("model.h5")
       img = image.load_img(path2, target_size=(224,224))
