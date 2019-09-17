@@ -5,16 +5,16 @@
  
  * Instalacion de Dependencias 
  
- make install && make dev
+    make install && make dev
  
- python manage.py initdb
+    python manage.py initdb
  
 * Ejecutar Aplicación
  
- python manage.py runserver
+    python manage.py runserver
  
  * Instalacion de Tensorflow y Keras
  
- pip install tensorflow
+    pip install tensorflow
  
- pip install keras
+    pip install keras
