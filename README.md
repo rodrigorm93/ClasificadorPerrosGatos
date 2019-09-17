@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # flaskSaas
 
 ![License](http://img.shields.io/:license-mit-blue.svg)
@@ -86,3 +87,25 @@ Read [this](http://flask.pocoo.org/docs/0.10/config/) for information on the pos
 ## License
 
 The MIT License (MIT). Please see the [license file](LICENSE) for more information.
+=======
+# ClasificadorPerrosGatos
+
+ Aplicacion web para clasificar perros y gatos, creado en base a proyecto de :
+ https://github.com/llSourcell/AI_Startup_Prototype
+ 
+ * Instalacion de Dependencias 
+ 
+    make install && make dev
+ 
+    python manage.py initdb
+ 
+* Ejecutar Aplicación
+ 
+    python manage.py runserver
+ 
+ * Instalacion de Tensorflow y Keras
+ 
+    pip install tensorflow
+ 
+    pip install keras
+>>>>>>> f2acf7ba7c5d6fab3e12a1ab72157efa7d05f6b1
